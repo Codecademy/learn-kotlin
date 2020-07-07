@@ -7,7 +7,7 @@ fun main() {
     // Write your code below
     
     // Creating Quiz Questions
-    println("What is 75 / 5?: ")
+    println("What is 75 / 5: ")
     var studentAnswer1 = Integer.valueOf(readLine())
 
     println("What is the value of y: 6 * 2y = 36")
@@ -23,7 +23,7 @@ fun main() {
     // Grading the Quiz
     var points = 0
     // Question 1
-    if(studentAnswer1 == quizAnswer1) {
+    if (studentAnswer1 == quizAnswer1) {
         points += 25
     }
 
