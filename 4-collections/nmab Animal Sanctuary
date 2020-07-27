@@ -1,0 +1,74 @@
+fun main() {
+    // Write your code below 🏞
+    var responsibilities = listOf("feed the chimps", "play a random game", "conduct a health check on Foxie")
+    var responsibilitiesComplete = 0
+    var timeSpent = 0
+    val totalShiftTime = 4
+    
+    // Below is are task setups
+    val foxiesHealthCheck = mutableMapOf<String, Any?>()
+    val chimpsHaveEaten = mutableMapOf("Bonnie" to false, "Jubilee" to false, "Frodo" to false, "Foxie" to false)
+
+    // Below are the games we can play with the chimps
+    val games = setOf("tug-of-war with a blanket", "catch and throw", "number game")
+    var randomGame = games.random()
+  
+    // First responsibility outcomes below
+    println("First, ${responsibilities[0]}.")
+    println("\nFeeding Bonnie....")
+    chimpsHaveEaten["Bonnie"] = true
+  
+    println("Feeding Jubilee....")
+    chimpsHaveEaten["Jubilee"] = true
+
+    println("Feeding Frodo....")
+    chimpsHaveEaten["Frodo"] = true
+
+    println("Feeding Foxie....")
+    chimpsHaveEaten["Foxie"] = true
+
+    timeSpent++ // +1 
+    responsibilitiesComplete++ // +1
+    println("\nAll chimps have now been fed! You've completed $responsibilitiesComplete / ${responsibilities.size}")
+
+    // Second responsibility outcomes
+    println("\nNext, ${responsibilities[1]}")
+    println("\nThe name of the game is...$randomGame!")
+    timeSpent++ // +1
+    responsibilitiesComplete++ // +1
+
+    println("\nEach chimp has now played a game of $randomGame! You've completed $responsibilitiesComplete / ${responsibilities.size} responsibilities.")
+
+    // Thrid responsibility outcomes
+    println("\nNext, ${responsibilities[2]}")
+    foxiesHealthCheck.put("Temperature", 32.7) // "Temperature" to 32.7 Added to map
+    foxiesHealthCheck.put("mood", "happy") // "mood" to "happy" Added to map
+
+    println("\nFoxie has a temperature of ${foxiesHealthCheck["Temperature"]} and is feeling ${foxiesHealthCheck["mood"]}")
+
+    // foxiesTemp is casted as a Double data type to help compiler
+    var foxiesTemp = foxiesHealthCheck["Temperature"] as Double 
+
+    if (foxiesTemp > 32.7) {
+      println("Somebody call 911! Foxie's fire-burning on the zoo floor!")
+      } else if (foxiesTemp == 32.7) {
+      println("That's one Foxie lady!")
+      } else {
+      println("Is the thermometer broken?... Maybe send help.")
+      }
+
+    timeSpent++ // +1
+    responsibilitiesComplete++ // +1
+
+    println("\nYou've now completed $responsibilitiesComplete / ${responsibilities.size} responsibilities.")
+
+
+    // Results based on conditions below
+    if (timeSpent <= totalShiftTime && responsibilitiesComplete == responsibilities.size) {
+      println("\nCongratulations on completing all of your responsibilities on time!") 
+      } else if (timeSpent >= totalShiftTime && responsibilitiesComplete == responsibilities.size) {
+      println("\nYou did everything! Although spent a little overtime...")
+      } else {
+      println("\nWe're disappointed. You didn't complete anything and spent far too much time...")
+    }
+}
