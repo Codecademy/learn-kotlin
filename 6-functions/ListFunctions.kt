@@ -1,5 +1,3 @@
-
-
 fun getListOfNumbers(): List<Int> {
     var myList = mutableListOf<Int>()
     for (i in 1..7) {
