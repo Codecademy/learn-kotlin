@@ -41,6 +41,25 @@ https://www.codecademy.com/learn/learn-kotlin
 ## 2. Data Types & Variables ##
 
 - [x] [`MathMagic.kt`](2-data-types-variables/Math-Magic/MathMagic.kt)
+- [x] [`MadLibs.kt`](2-data-types-variables/MadLibs.kt)
+
+## 3. Conditional Expressions ##
+
+- [x] [`Quiz.kt`](3-conditional-expressions/Quiz.kt)
+
+
+## 4. Collections ##
+
+- [x] [`Sanctuary.kt`](4-collections/Sanctuary.kt)
+
+## 5. Loops ##
+
+- [x] [`Shapes.kt`](5-loops/Shapes.kt)
+
+
+## 6. Functions ##
+
+- [x] [`ListFunctions.kt`](6-functions/ListFunctions.kt)
 
 ---
 
