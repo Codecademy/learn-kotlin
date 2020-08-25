@@ -69,6 +69,11 @@ https://www.codecademy.com/learn/learn-kotlin
 
 - [x] [`ListFunctions.kt`](6-functions/ListFunctions.kt)
 
+
+## 7. Classes ##
+
+- [x] [`Calculator.kt`](7-classes/Calculator.kt)
+
 ---
 
 ### Cheatsheets ###
