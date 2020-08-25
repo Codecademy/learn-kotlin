@@ -18,10 +18,18 @@
 [2.3]: http://www.github.com/galinap684
 
 [2.4]: http://www.github.com/adistasicc
+
+[2.5]: https://github.com/cgrijalva90 
+
+[2.6]: https://github.com/jaceva
     
 **Curriculum Developer:** Galina Podstrechnaya (galina@codecademy.com) [![alt text][2]][2.3]
 
 **Curriculum Developer:** Alex DiStasi (adistasi@codecademy.com) [![alt text][2]][2.4]
+
+**Content Contributor:** Carlos Grijalva [![alt text][2]][2.5]
+
+**Content Contributor:** Jace van Auken [![alt text][2]][2.6]
 
 **Artwork:** Tim Liedtke (https://www.timliedtke.com)
 
