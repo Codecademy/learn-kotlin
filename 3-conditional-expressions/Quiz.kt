@@ -1,6 +1,6 @@
 fun main() {
     val quizAnswer1 = 15
-    var quizAnswer2 = 3
+    val quizAnswer2 = 3
     val quizAnswer3 = "isosceles"
     val quizAnswer4 = 47
 
@@ -30,7 +30,7 @@ fun main() {
     // Question 2
     if (studentAnswer2 == quizAnswer2) {
         points += 25
-    } else if (studentAnswer2 == quizAnswer2++ || studentAnswer2 == quizAnswer2--) {
+    } else if (studentAnswer2 == quizAnswer2+1 || studentAnswer2 == quizAnswer2-1) {
         points += 20
         println("The answer $studentAnswer2 is within 1 point of $quizAnswer2")
     } else {
